@@ -4,5 +4,5 @@ tags={
 	"Buildings"
 }
 name="Outpost Slots"
-supported_version="2.8.1"
+supported_version="3.0.*"
 remote_file_id="2424006275"
