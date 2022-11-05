@@ -11,6 +11,7 @@ starbase_outpost = {
 		starbase_defense_platform_capacity_add = 3
 		starbase_building_capacity_add = 1
 		starbase_module_capacity_add = 1
+               ship_sensor_range_add = 1
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.50
@@ -23,7 +24,7 @@ starbase_outpost = {
 		cost = {
 			trigger = {
 				from = {
-					is_machine_empire = no 
+					is_machine_empire = no
 				}
 			}
 			alloys = 100
@@ -31,7 +32,7 @@ starbase_outpost = {
 		cost = {
 			trigger = {
 				from = {
-					is_machine_empire = yes 
+					is_machine_empire = yes
 				}
 			}
 			alloys = 150
@@ -39,6 +40,18 @@ starbase_outpost = {
 		upkeep = {
 			energy = 1
 		}
+	}
+
+	potential_construction = {
+		is_scope_type = planet
+		is_primary_star = yes
+		NOT = {
+			exists = orbital_defence
+		}
+	}
+
+	possible_construction = {
+		always = yes
 	}
 
 	combat_size_multiplier = 5
@@ -68,4 +81,5 @@ starbase_outpost = {
 	build_block_radius = @build_block_radius_starbase
 	formation_priority = @starbase_formation_priority
 	icon_frame = 1
+	icon = ship_size_military_station
 }
