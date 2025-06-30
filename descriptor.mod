@@ -1,8 +1,8 @@
-version="0.4"
+version="0.5"
 tags={
 	"Balance"
 	"Buildings"
 }
 name="Outpost Slots"
-supported_version="3.5.*"
+supported_version="4.0.*"
 remote_file_id="2424006275"
